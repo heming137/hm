@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: cornflowerblue 1px solid;
+        }
+        .mncolor {
+            color: crimson;
+        }
+        .mnbgc {
+            background-color:darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseover="abc()">美美</div>
+    <div>芳芳</div>
+    <div deleted="undefine">冰冰</div>
+    <div><a href="https://miaosha.jd.com/#67287818055">这件是我买的</a></div>
+    <a href=""></a>
+
+    <script>
+        var mn = document.querySelectorAll("div");
+        mn[1].style.fontSize = "2rem";
+        mn[1].className = "mncolor";
+        mn[1].className = "mnbgc";
+        console.dir(mn[1].tagName);
+        console.dir(mn[3]);
+        // mn[3].innerHTML = "双11损失太大了";
+        console.dir(mn[3].getAttribute(mn[3].innerHTML));
+        function abc() {
+            mn[0].style.color = "red";
+        }
+        mn[2].onclick = function bcd() {
+            this.style.fontSize = "2.5rem";
+        }
+    </script>
+</body>
+</html>

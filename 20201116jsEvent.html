@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>亲，约吗</div>
+    <div></div>
+    <div>约</div>
+    <div>不约</div>
+    <p></p>
+    <div>下一张</div>
+    <img src="ddd.html/祁东酥脆枣.gif" alt="">
+    
+
+    <script>
+        var divs = document.querySelectorAll("div");
+        divs[2].onclick = function () {
+            divs[1].innerHTML = "老地方见";
+        }
+        divs[3].onclick = function () {
+            divs[1].innerHTML = "放过我吧";
+        }
+        var img = document.querySelectorAll("img")[0];
+        divs[4].onclick = function (){
+            ++i;
+            if(i<10)
+            img.src = "image/mn0"+ i +".jpg";
+            else
+            i = 0;
+        }
+    </script>
+</body>
+</html>

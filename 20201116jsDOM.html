@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: cornflowerblue 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div>美美</div>
+        <div>芳芳</div>
+        <div id="bb">冰冰</div>
+
+        <div class="gs">123</div>
+        <div class="gs">456</div>
+        <div class="gs" name="kk">789</div>
+
+        <a href=""></a>
+        <script>
+            var mn = document.getElementsByTagName("div");
+            console.dir(mn[1]);
+
+            var bb = document.getElementById("bb");
+            console.dir(bb);
+
+            var sg = document.getElementsByClassName("gs");
+            console.dir(sg);
+
+            bb.innerHTML = "冰冰";
+            bb.style.fontSize = "2rem";
+            bb.div += "color:red";
+        </script>
+    </body>
+</body>
+</html>
